@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View } from 'react-native';
 
 import AppLoading from 'expo-app-loading';
-import ShopNavigator from './navigation/ShopNavigator';
+import MainNavigation from './navigation';
 import { StatusBar } from 'expo-status-bar';
 import { useFonts } from 'expo-font';
 
@@ -15,7 +15,7 @@ export default function App() {
   if(!loaded) return <AppLoading />
 
   return (
-    <ShopNavigator />
+    <MainNavigation />
   );
 }
 
